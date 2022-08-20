@@ -1,5 +1,5 @@
 {
-  "name": "project5",
+  "name": "productsmanagement",
   "version": "1.0.0",
   "description": "Products Management Project",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tara-Marathi/Project5.git"
+    "url": "git+https://github.com/Tara-Marathi/ProductManagement.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tara-Marathi/Project5/issues"
+    "url": "https://github.com/Tara-Marathi/ProductManagement/issues"
   },
-  "homepage": "https://github.com/Tara-Marathi/Project5#readme",
+  "homepage": "https://github.com/Tara-Marathi/ProductManagement#readme",
   "dependencies": {
     "aws-sdk": "^2.1148.0",
     "bcrypt": "^5.0.1",
