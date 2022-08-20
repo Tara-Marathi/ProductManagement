@@ -15,13 +15,13 @@ const productSchema = new mongoose.Schema({
     price: {
         type:Number, 
         required:true
-    },                      //valid number/decimal
+    },                      
     currencyId: {           
         type:String, 
         required:true,
         enum:['INR']
     },
-    currencyFormat: {       //Rupee symbol
+    currencyFormat: {      
         type:String, 
         required:true,
         enum:['₹']
@@ -54,5 +54,6 @@ const productSchema = new mongoose.Schema({
     }
 
 }, {timestamps:true});
+
 
 module.exports = mongoose.model('Product', productSchema);

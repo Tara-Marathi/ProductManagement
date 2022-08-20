@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema({
             pincode:{type:Number,required:true}
         }
     }
-
 },{timestamps:true});
+
 
 module.exports = mongoose.model('User', userSchema);

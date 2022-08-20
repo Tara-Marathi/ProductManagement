@@ -10,6 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(multer().any());
 
+
 mongoose.connect("mongodb+srv://tara:c0VtDGqc7Ugvjpug@cluster0.0vu5f.mongodb.net/project5?retryWrites=true&w=majority", 
 {useNewUrlParser: true})
     .then(() => console.log('mongodb is connected'))

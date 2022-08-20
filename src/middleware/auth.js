@@ -14,6 +14,7 @@ let authentication = function (req, res, next) {
         if (!decodedToken) {
             return res.status(401).send({ status: false, message: "token is invalid" })
         }
+        
         req.userId=decodedToken.userId
         next()
         
@@ -21,5 +22,6 @@ let authentication = function (req, res, next) {
         res.status(500).send({ status: false, ERROR: error.message })
     }
 }
+
 
 module.exports.authentication=authentication

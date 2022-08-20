@@ -146,7 +146,6 @@ const getProduct = async function(req,res){
 
         if(size){
             const avlSize = size.trim().toUpperCase().split(",").map(x=>x.trim())
-            // const sizeArr = []
             for(let i=0;i<avlSize.length;i++){
                 if(!(["S", "XS", "M", "X", "L", "XXL", "XL"].includes(avlSize[i]))){
                     return res.status(400).send({status:false,msg:`${avlSize[i]} size is not available`})
